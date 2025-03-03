@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact The Meraki Resort for inquiries and reservations.">
+  <title>The Meraki Resort | Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1><a href="index.html">The Meraki Resort</a></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Accommodations</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+  <h2>Discover Your Dream Vacation</h2>
+      <img src="swiss-valley.jpg" alt="Beautiful view of a Swiss valley with mountains in the background" width="1280" height="400">
+    </section>
+
+    <!-- Contact Section (Option 1 Layout) -->
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us! <span>*</span></p>
+      
+      <div class="contact-content">
+        <!-- Image for layout -->
+        <div class="contact-image">
+          <img src="swiss-sunset.jpg" alt="Stunning Swiss sunset over the mountains" width="400" height="300">
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <form method="POST" action="https://wp.zybooks.com/form-viewer.php">
+            <label for="full-name">Full Name*:</label>
+            <input type="text" id="full-name" name="full-name" required>
+            
+            <label for="email">Email Address*:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number*:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <fieldset>
+              <legend>Preferred Contact Method*:</legend>
+              <label for="contact-email">
+                <input type="radio" id="contact-email" name="preferred-contact" value="email" required>
+                Email
+              </label>
+              <label for="contact-phone">
+                <input type="radio" id="contact-phone" name="preferred-contact" value="phone" required>
+                Phone
+              </label>
+            </fieldset>
+            
+            <label for="comments">Comments*:</label>
+            <textarea id="comments" name="comments" rows="5" required></textarea>
+            
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>©2023 - The Meraki Resort</p>
+    <p>This site is for educational purposes only</p>
+  </footer>
+</body>
+</html>
